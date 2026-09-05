@@ -1,5 +1,5 @@
-* {
-    box-sizing: border-box;
+*{
+  box-sizing: border-box;
 }
 
 body {
@@ -10,70 +10,96 @@ body {
     background-repeat: no-repeat;
 }
 
-#title {
-    font-size: 70px;
-    font-weight: 400;
-    line-height: 78px;
-    margin: 110;
-    text-align: center;
-    color: #515076;
-}
 
-.products-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    row-gap: 30px;
-    column-gap: 10px;
-    justify-content: center;
-    width: 1110px;
+.title {
+  font-size: 70px;
+  font-weight: 400;
+  line-height: 78px;
+  margin: 110px;
+  text-align: center;
+  width: 100%;
+  color: #515076;
 }
-
-.card-title {
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 27px;
-    margin: 0;
-    color: #515076;
-}
-
-.tag {
-    font-size: 12px;
-    line-height: 24px;
-    color: #A5A3B9;
-    text-transform: uppercase;
+.product-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .product-card {
-    background-color: #F7F7FA;
-    width: 340px;
-    padding: 25px;
-
+  background-color: #f7f7fa;
+  width: 340px;
+  padding: 25px;
 }
 
-main text {
-    font-size: 13px;
-    color: #515076;
-    line-height: 18px;
+.main-text {
+  font-size: 13px;
+  line-height: 13px;
+  color: #515076;
 }
 
-.product-price {
-    margin-top: 25px;
+.price,
+.sum {
+  font-size: 20px;
+  line-height: 24px;
+  color: #515076;
+}
+.price-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.tag {
+  font-size: 12px;
+  line-height: 24px;
+  color: #a5a3b9;
+  display: block;
+  text-transform: uppercase;
 }
 
-.price {
-    
-
-}
-
-button {
-    background-color: #515076;
+.button {
+  background-color: #515076;
     color: #fff;
     border: 1px solid #000;
     border-radius: 5px;
     padding: 10px 20px;
     font-size: 20px;
+    font-size: 20px;
 }
+.button-blue {
+  background-color: #515076;
+  color: white;
+  border: 1px solid #000;
+  padding: 10px 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
