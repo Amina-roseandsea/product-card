@@ -1,105 +1,163 @@
-*{
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
 }
 
 body {
-    font-family: Montserrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 13px;
     line-height: 18px;
     background-image: url("images/bg.png");
     background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
-
 
 .title {
-  font-size: 70px;
-  font-weight: 400;
-  line-height: 78px;
-  margin: 110px;
-  text-align: center;
-  width: 100%;
-  color: #515076;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 78px;
+    margin: 110px 0;
+    text-align: center;
+    width: 100%;
+    color: #515076;
 }
+
 .product-list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
 .product-card {
-  background-color: #f7f7fa;
-  width: 340px;
-  padding: 25px;
+    background-color: #f7f7fa;
+    width: 340px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
 }
 
-.main-text {
-  font-size: 13px;
-  line-height: 13px;
-  color: #515076;
+.product-card__image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
 }
 
-.price,
-.sum {
-  font-size: 20px;
-  line-height: 24px;
-  color: #515076;
-}
-.price-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 25px;
-}
-.tag {
-  font-size: 12px;
-  line-height: 24px;
-  color: #a5a3b9;
-  display: block;
-  text-transform: uppercase;
+.product-card__tag {
+    font-size: 12px;
+    line-height: 24px;
+    color: #a5a3b9;
+    display: block;
+    text-transform: uppercase;
+    margin-bottom: 10px;
 }
 
-.button {
-  background-color: #515076;
-    color: #fff;
-    border: 1px solid #000;
-    border-radius: 5px;
-    padding: 10px 20px;
+.product-card__title {
     font-size: 20px;
+    line-height: 26px;
+    color: #515076;
+    margin: 0 0 15px 0;
+}
+
+.product-card__description {
+    font-size: 13px;
+    line-height: 18px;
+    color: #515076;
+    margin: 0 0 15px 0;
+}
+
+.product-card__compound-title {
+    font-weight: bold;
+    color: #515076;
+    margin-bottom: 5px;
+}
+
+.product-card__compound-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin: 0 0 25px 0;
+    color: #515076;
+}
+
+.product-card__compound-item {
+    margin-bottom: 4px;
+}
+
+.product-card__price-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.product-card__price-label {
     font-size: 20px;
-}
-.button-blue {
-  background-color: #515076;
-  color: white;
-  border: 1px solid #000;
-  padding: 10px 20px;
-  font-size: 13px;
-  cursor: pointer;
+    line-height: 24px;
+    color: #515076;
 }
 
+.product-card__price-value {
+    font-size: 20px;
+    line-height: 24px;
+    color: #515076;
+    font-weight: bold;
+}
 
+/* Кнопка переключения темы */
+.product-toggle-btn {
+    font-family: 'Montserrat', sans-serif;
+    padding: 12px 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: #f7f7fa;
+    color: #515076;
+    border: 2px solid #515076;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
 
+.product-toggle-btn:hover {
+    background-color: #515076;
+    color: #f7f7fa;
+}
 
+/* Стили для Тёмной Темы */
+body.dark-theme {
+    background-image: none;
+    background-color: #515076;
+}
 
+body.dark-theme .title {
+    color: #f7f7fa;
+}
 
+body.dark-theme .product-card {
+    background-color: #3d3c59;
+}
 
+body.dark-theme .product-card__title,
+body.dark-theme .product-card__description,
+body.dark-theme .product-card__compound-title,
+body.dark-theme .product-card__compound-list,
+body.dark-theme .product-card__compound-item,
+body.dark-theme .product-card__price-label,
+body.dark-theme .product-card__price-value {
+    color: #f7f7fa;
+}
 
+body.dark-theme .product-toggle-btn {
+    background-color: #3d3c59;
+    color: #f7f7fa;
+    border-color: #f7f7fa;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+body.dark-theme .product-toggle-btn:hover {
+    background-color: #f7f7fa;
+    color: #515076;
+}
