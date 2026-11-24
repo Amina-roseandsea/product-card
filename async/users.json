@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Amina",
+      "surname": "Kh",
+      "email": "amina.Kh@mail.com",
+      "age": 22,
+      "city": "Анталья"
+    },
+    {
+      "id": 2,
+      "name": "Aisha",
+      "surname": "Kh",
+      "email": "aisha.Kh@mail.com",
+      "age": 24,
+      "city": "Стамбул"
+    },
+    {
+      "id": 3,
+      "name": "Mira",
+      "surname": "Ay",
+      "email": "mira.Ay@mail.com",
+      "age": 35,
+      "city": "Измир"
+    }
+  ]
+}
