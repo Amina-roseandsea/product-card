@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ДЗ №15 — Асинхронность и LocalStorage</title>
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #eef2f5;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      #status-text {
+        font-size: 20px;
+        font-weight: 600;
+        color: #2c3e50;
+        margin-bottom: 20px;
+        text-align: center;
+      }
+
+      .actions {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 25px;
+      }
+
+      .actions button {
+        padding: 10px 18px;
+        font-size: 14px;
+        font-weight: 600;
+        color: #fff;
+        background-color: #2a2a2a;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+
+      .actions button:hover {
+        background-color: #2980b9;
+      }
+
+      #delete-all {
+        background-color: #a7111a;
+      }
+
+      #delete-all:hover {
+        background-color: #c0392b;
+      }
+
+      #users-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 16px;
+        max-width: 900px;
+      }
+
+      .user-card {
+        background: #ffffff;
+        border-radius: 10px;
+        padding: 18px;
+        width: 230px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+      }
+
+      .user-card h3 {
+        margin: 0 0 10px;
+        color: #1a252f;
+      }
+
+      .user-card p {
+        margin: 6px 0;
+        font-size: 14px;
+        color: #555;
+      }
+
+      .remove-card-btn {
+        margin-top: 12px;
+        padding: 6px 12px;
+        background-color: #95a5a6;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      .remove-card-btn:hover {
+        background-color: #7f8c8d;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="status-text">Данные загружаются</div>
+
+    <div class="actions">
+      <button id="load-all">Получить все карточки</button>
+      <button id="delete-all">Удалить все карточки</button>
+    </div>
+
+    <div id="users-list"></div>
+
+    <script src="async.js"></script>
+  </body>
+</html>
